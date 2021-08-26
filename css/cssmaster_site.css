@@ -1,0 +1,445 @@
+/* MASTER -------- -------- -------- -------- -------- -------- -------- -------- -------- -------- -------- */
+/* FORMATOS */
+@keyframes formato {
+    0%{}
+    5%{}
+    10%{}
+    15%{}
+    20%{}
+    25%{}
+    30%{}
+    35%{}
+    40%{}
+    45%{}
+    50%{}
+    55%{}
+    60%{}
+    65%{}
+    70%{}
+    75%{}
+    80%{}
+    85%{}
+    90%{}
+    95%{}
+    100%{}
+}
+/*------------*/
+:root{
+    /* BACKGROUND ALPHA */
+    --backgroundAlpha: rgba(0, 0, 0, 0.514);
+    /*COLORES THEME*/
+    --colorAmarillo: #dbc721;
+    --colorAmarillo_opacity: #dbc8215e;
+    --colorBlanco: #ffffff;
+    --colorPlomo: #585858;
+    --colorPlomo_opacity: #5858585e;
+    --colorVerde: #234918;
+    --colorRojo: rgb(173, 3, 3);
+    --colorMorado: rgb(21, 10, 61);
+    --colorMorado_opacity: rgba(21, 10, 61, 0.5);
+    --colorBackgroundText: rgba(0, 0, 0, 0.651);
+    --colorAzul: rgba(29, 43, 172, 0.651);
+    --colorAzulNeon: rgba(67, 110, 250, 0.651);
+    --colorVerdeNeon: #42bb09;
+    --colorMoradoNeon: rgb(60, 31, 165);
+    /*------------*/
+    /* FUNETES */
+    --fontOne: depthcore;
+    --fontTwo: QueerStreet;
+    --fontThree: StreetReich;
+    --fontFour: EnemyPublic;
+    --fontMatrix: Japan;
+    --fontGoogleEncode: 'Encode Sans SC', sans-serif;
+    /*------------*/
+    /* COLOR SOCIAL */
+    --colorFacebook: #1877f2;
+    --colorTwitter: #1da1f2;
+    --colorInstagram: #f46f30;
+    --colorLinkedin: #0a66c2;
+    --colorYoutube: #ff0000;
+    /*------------*/
+}
+/* FUNETES */
+@font-face {
+    font-family: depthcore;
+    src: url(../resources/font/depthcore_edit.ttf)
+    format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: QueerStreet;
+    src: url(../resources/font/Queer\ Street.ttf)
+    format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: StreetReich;
+    src: url(../resources/font/Street\ Reich.otf)
+    format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: EnemyPublic;
+    src: url(../resources/font/the_enemy_is_public.ttf)
+    format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Japan;
+    src: url(../resources/font/Japanese.ttf)
+    format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+/*------------*/
+*{
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+}
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: black !important;
+    overflow-y: scroll;
+    color: white; /* MODIFICAR 123 */
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: var(--colorPlomo);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--colorAmarillo_opacity);
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: var(--colorAmarillo);
+}
+.container_site{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.container_site >.background_site{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+/* TEXTOS */
+.principal_title{
+    padding-top: 5px;
+    color: var(--colorAmarillo);
+}
+.secondary_title{
+    color: var(--colorVerde);
+}
+p{
+    font-size: 15px;
+}
+ol li{
+    color: white;
+}
+.titleSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.titleSection .text{
+    color: var(--colorAmarillo);
+    font-family: var(--fontOne);
+    font-size: 2.5rem !important;
+    text-decoration: underline;
+}
+/* DESAFIO:: "APLICAR FLEXBOX" */
+.titlePage{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+    padding-top: 0px;
+    position: fixed;
+    z-index: 1070;
+}
+.titlePage h1{
+    width: 100%;
+    height: 60px;
+    font-family: var(--fontGoogleEncode);
+    font-size: 3rem;
+    color: var(--colorAmarillo);
+    -webkit-text-stroke: 0px white;
+    background-color: var(--colorMorado);
+    border-radius: 0px;
+    padding-left: 10px;
+}
+.textCenter{
+    text-align: center;
+}
+.textLeft{
+    text-align: left;
+}
+.textRight{
+    text-align: right;
+}
+.textJustify{
+    text-align: justify;
+}
+/* SECTION PAGE */
+.section_page{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding-top: 0.5%;
+}
+.section_page >.background{
+    width: 99%;
+    height: 99%;
+    margin-left: 0.5%;
+    background-color: transparent;
+}
+.section_page_opacity{
+    opacity: 0.1 !important;
+}
+.section_float{
+    z-index: 1070;
+    margin-top: -250px;
+    position: absolute;
+    transition: all 0.4s ease-in-out !important;
+}
+.section_W50{
+    width: 50%;
+}
+.section_W100{
+    width: 100%;
+}
+.section_H50{
+    width: 50vh;
+}
+.section_H100{
+    height: 100vh;
+}
+.sectionPaddingTB{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.separatorHorizontal{
+    width: 100% !important;
+    height: 70px !important;
+    background: transparent !important;
+}
+/*------------*/
+
+/* TAGBAND */
+.tagBand{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding-top: 3px;
+}
+.tagBand >.background{
+    width: 100%;
+    height: 45px;
+    margin-left: 0%;
+    background-color: var(--colorAmarillo);  
+}
+.tagBand >.background .controlListTag{
+    width: 100%;
+    height: 40px;
+    background-color: var(--colorAmarillo);  
+}
+.tagBand >.background .controlListTag .background{
+    width: 100%;
+    height: 40px;
+    background-color: var(--colorAmarillo);  
+    overflow: hidden;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;*/
+    padding-left: 4%;
+}
+.tagBand >.background .controlListTag .background .tagItem{
+    float: left;
+    width: 12%;
+    height: 40px;
+    border: solid 2px var(--colorPlomo);
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+    margin-left: 1px;
+    color: var(--colorPlomo);
+    font-weight: bold;
+    border-radius: 2px;
+    font-family: var(--fontOne);
+    text-align: center;
+}
+/*.tagBand >.background .controlListTag .background ul{
+    font-size: 15px;
+    background-color: transparent;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.tagBand >.background .controlListTag .background ul li{
+    display: inline-flex;
+    border: solid 2px var(--colorPlomo);
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+    margin-left: 1px;
+    color: var(--colorPlomo);
+    font-weight: bold;
+    border-radius: 2px;
+    font-family: var(--fontOne);
+}*/
+/*.tagBand >.background .controlListTag .background ul ul{
+    position: absolute;
+    display: none;
+}
+.tagBand >.background .controlListTag .background ul ul li{
+    display: block;
+}
+.tagBand >.background .controlListTag .background ul li:hover ul{
+    display: block;
+}*/
+/*------------*/
+
+.textFloatRight{
+    display: flex;
+    justify-content: flex-end;
+}
+.textFloatLeft{
+    display: flex;
+    justify-content: flex-start;
+}
+.textFloatCenter{
+    display: flex;
+    justify-content: center;
+}
+.textFloatRight .textUp{
+    border-radius: 5px 0px 0px 0px;
+}
+.textFloatLeft .textUp{
+    border-radius: 0px 5px 0px 0px;
+}
+.textFloatCenter .textUp{
+    border-radius: 5px 5px 0px 0px;
+}
+.textFloatRight .textDown{
+    border-radius: 0px 0px 0px 5px;
+}
+.textFloatLeft .textDown{
+    border-radius: 0px 0px 5px 0px;
+}
+.textFloatCenter .textDown{
+    border-radius: 0px 0px 5px 5px;
+}
+/*------------*/
+/* GRILLA / DESAFIO:: "APLICANDO GRIDS" */
+@media only screen and (min-width: 360px) and (max-width: 400px){
+    .tagBand >.background .controlListTag .background{
+        padding-left: 1%;
+    }
+    .tagBand >.background .controlListTag .background .tagItem{
+        float: left;
+        width: 49%;
+        height: 40px;
+        border: solid 2px var(--colorPlomo);
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        list-style: none;
+        margin-left: 1px;
+        color: var(--colorPlomo);
+        font-weight: bold;
+        border-radius: 2px;
+        font-family: var(--fontOne);
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+    .tagBand >.background .controlListTag .background{
+        padding-left: 1%;
+    }
+    .tagBand >.background .controlListTag .background .tagItem{
+        float: left;
+        width: 49%;
+        height: 40px;
+        border: solid 2px var(--colorPlomo);
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        list-style: none;
+        margin-left: 1px;
+        color: var(--colorPlomo);
+        font-weight: bold;
+        border-radius: 2px;
+        font-family: var(--fontOne);
+        text-align: center;
+    }
+    .titleSection .text{
+        width: 100%;
+        background-color: transparent;
+        font-size: 1.5rem !important;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .tagBand{
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+    .tagBand >.background .controlListTag .background{
+        padding-left: 1%;
+    }
+    .tagBand >.background .controlListTag .background .tagItem{
+        float: left;
+        width: 33%;
+        height: 40px;
+        border: solid 2px var(--colorPlomo);
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        list-style: none;
+        margin-left: 1px;
+        color: var(--colorPlomo);
+        font-weight: bold;
+        border-radius: 2px;
+        font-family: var(--fontOne);
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .tagBand{
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+    .tagBand >.background .controlListTag .background{
+        padding-left: 5%;
+    }
+    .tagBand >.background .controlListTag .background .tagItem{
+        width: 23%;
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+    .tagBand >.background .controlListTag .background{
+        padding-left: 5%;
+    }
+    .tagBand >.background .controlListTag .background .tagItem{
+        width: 19%;
+    }
+}
