@@ -39,7 +39,7 @@
                 <div class="sideRight">
                     <div class="background">
                         <div class="controlUser">
-                            <img src="resources/images/user/user.svg" class="iconUser">
+                            <img src="resources/images/user/user.svg" class="iconUser" id="iconUser">
                         </div>
                         <div id="buttonMenu" class="buttonMenu">
                             <div class="icon_menu"><i class="fas fa-bars"></i></div>
@@ -116,6 +116,37 @@
                     </div>
                 </div>
             </nav>
+        </div>
+    </div>
+    <div id="userPanel" class="userPanel userPanel--hide">
+        <div class="background">
+            <div class="icon">
+                <img src="resources/images/user/user.svg">
+            </div>
+            <div class="login--form">
+                <div class="background">
+                    <form>
+                        <div class="login--row--input">
+                            <div class="login--label">user_name</div>
+                            <input class="login--input" type="text">
+                        </div>
+                        <div class="login--row--input">
+                            <div class="login--label">password</div>
+                            <input class="login--input" type="password">
+                        </div>
+                        <div class="login--row--separartor"></div>
+                        <div class="login--row--bar">
+                            <div class="sideLeft">
+                                <label><input type="checkbox">&nbsp;&nbsp;Remenber me</label>
+                                <a href="" target="_blank">Forgot password?</a>
+                            </div>                            
+                            <div class="sideRight">
+                                <input class="submitSite" type="submit" value="Login">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <div class="button_float">
@@ -295,6 +326,21 @@
                             
                         </div>
                     </div>
+                    <!--<div class="column_footer">
+                        <div class="background">
+                            
+                        </div>
+                    </div>-->
+                    <!--<div class="column_footer column_footer_triple">
+                        <div class="background">
+                            <ul>
+                                <li class="Facebook"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</li>
+                                <li class="Twitter"><i class="fab fa-twitter-square"></i>&nbsp;Twitter</li>
+                                <li class="Instagram"><i class="fab fa-instagram-square"></i>&nbsp;Instagram</li>
+                                <li class="YouTube"><i class="fab fa-youtube-square"></i>&nbsp;YouTube</li>
+                            </ul>
+                        </div>
+                    </div>-->
                     <div class="column_footer">
                         <div class="background">
                             <div class="list_site">
@@ -343,18 +389,22 @@
         </div>
     </div>
     <script>
+        //window.onload = alert($(window).width());
         $( window ).scroll(function() {
             var scrollNumber = $( window ).scrollTop();
             menuSticky("menu_site", scrollNumber);
         });
         $('.container_site').click(function(event) {
             menuRight_hide();
+            hideloginControl();
         });
         $('.footer_site').click(function(event) {
             menuRight_hide();
+            hideloginControl();
         });
         $('.tagBand').click(function(event) {
             menuRight_hide();
+            hideloginControl();
         });
         $(".itemmenu").click(function(){
             var datasectionpage = $(this).attr("data-section-page");
@@ -366,6 +416,9 @@
         });
         $("#buttonMenu").click(function(){
             showMenuRight();
+        });
+        $("#iconUser").click(function(){
+            showloginControl();
         });
         $(".button_gotop").click(function(){
             $("html, body").animate({ scrollTop: 0 }, 100);

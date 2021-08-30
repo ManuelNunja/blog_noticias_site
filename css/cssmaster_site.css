@@ -263,6 +263,10 @@ ol li{
     height: 40px;
     background-color: var(--colorAmarillo);  
     overflow: hidden;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;*/
     padding-left: 4%;
 }
 .tagBand >.background .controlListTag .background .tagItem{
@@ -281,6 +285,36 @@ ol li{
     font-family: var(--fontOne);
     text-align: center;
 }
+/*.tagBand >.background .controlListTag .background ul{
+    font-size: 15px;
+    background-color: transparent;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.tagBand >.background .controlListTag .background ul li{
+    display: inline-flex;
+    border: solid 2px var(--colorPlomo);
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+    margin-left: 1px;
+    color: var(--colorPlomo);
+    font-weight: bold;
+    border-radius: 2px;
+    font-family: var(--fontOne);
+}*/
+/*.tagBand >.background .controlListTag .background ul ul{
+    position: absolute;
+    display: none;
+}
+.tagBand >.background .controlListTag .background ul ul li{
+    display: block;
+}
+.tagBand >.background .controlListTag .background ul li:hover ul{
+    display: block;
+}*/
 /*------------*/
 
 .textFloatRight{

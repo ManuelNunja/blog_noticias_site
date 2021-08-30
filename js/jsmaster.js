@@ -33,3 +33,22 @@ function menuRight_hide(){
     }
 }
 /* ----------------------------------------------------- */
+/* LOGIN */
+function showloginControl(){
+    var panel = document.getElementById("userPanel");
+    if(!panel.classList.contains("userPanel--show")){
+        panel.classList.add("userPanel--show");
+        panel.classList.remove("userPanel--hide");
+    }
+    else{
+        panel.classList.add("userPanel--hide");
+        panel.classList.remove("userPanel--show");
+    }
+}
+function hideloginControl(){
+    var panel = document.getElementById("userPanel");
+    if(panel.classList.contains("userPanel--show")){
+        panel.classList.add("userPanel--hide");
+        panel.classList.remove("userPanel--show");
+    }
+}
